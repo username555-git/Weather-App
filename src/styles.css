@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: rgb(15, 218, 133);
+}
+
+h4 {
+  color: #0084ff;
+}
+
+.container1 {
+  color: rgb(15, 218, 133);
+  text-align: center;
+}
+
+.container2 {
+  color: rgb(0, 162, 255);
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(15, 218, 133);
+}
+
+::placeholder {
+  color: rgb(15, 218, 133);
+}
+
+input,
+select,
+textarea {
+  color: #0084ff;
+}
