@@ -16,18 +16,22 @@
 	
 
 		<body>
-			<div class="card text-center" style="width: 30rem">
+	<div class="card text-center" style="width: 30rem" id="weatherAppB">
 				<div class="card-body">
 					<form class="form1" id="form1">
-						<input type="text" id="keyWord" placeholder="What Is Your City?" />
-						<input type="submit" value="Search" class="search1" />
+						<input type="text" id="keyWord" placeholder="What Is Your City?" autocomplete="off" />
+						<input type="submit" value="Search" class="searchBtn" />
 					</form>
 
 				</br>
 					<h1>Currently in <strong id="cityName"></strong></h1>
-					<h2><strong id="tempName"></strong>˚C</h2>
+					<h2><img src =".." id="icon"><strong id="tempName"></strong><span class="units"><a href="#" id="cLink" class="active">˚C </a>| <a href="#" id="fLink">˚F</a></span> </h2>
 	
 					<h3 id="date"></h3>
+					<h4 id="weatherD"></h4>
+					<h5>Humidity: <span id="humidityD"></span> %
+						Wind Speed: <span id="windspeedD"></span> km/h</h5>
+
 				</br>
 					<h4>Next 5 Days Forecast</h4>
 	
