@@ -1,13 +1,55 @@
 body {
-  font-family: sans-serif;
+  font-family: gabriola;
+}
+
+h1 {
+  color: #0084ff;
 }
 
 h2 {
   color: rgb(15, 218, 133);
 }
 
-h4 {
+h3 {
   color: #0084ff;
+}
+
+h4 {
+  text-transform: capitalize;
+  color: rgb(0, 123, 139);
+  font-size: 16px;
+}
+
+h5 {
+  text-transform: capitalize;
+  color: rgb(0, 123, 139);
+  font-size: 16px;
+}
+
+h6 {
+  color: #0084ff;
+}
+
+#weatherAppB {
+  border: 3px solid gray;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.card-body .active {
+  color: rgb(15, 218, 133);
+  cursor: default;
+  text-decoration: none;
+}
+
+.card-body .active:hover {
+  text-decoration: none;
+}
+
+.searchBtn {
+  background-color: white;
 }
 
 .container1 {

@@ -25,9 +25,21 @@ function formatDate(date) {
 
 function showTemperature(response) {
   document.querySelector("#cityName").innerHTML = response.data.name;
-  document.querySelector("#tempName").innerHTML = Math.round(
-    response.data.main.temp
+  celsiusTemperature = response.data.main.temp;
+  document.querySelector("#tempName").innerHTML =
+    Math.round(celsiusTemperature);
+  document.querySelector("#weatherD").innerHTML =
+    response.data.weather[0].description;
+  document.querySelector("#humidityD").innerHTML = response.data.main.humidity;
+  document.querySelector("#windspeedD").innerHTML = Math.round(
+    response.data.wind.speed
   );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function searchCity(city) {
@@ -42,11 +54,37 @@ function clickSubmit(event) {
   searchCity(city);
 }
 
+function showFtemperature(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#tempName");
+
+  cLink.classList.remove("active");
+  fLink.classList.add("active");
+  let fTemperature = (celsiusTemperature * 9) / 5 + 32;
+  tempElement.innerHTML = Math.round(fTemperature);
+}
+
+function showCtemperature(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#tempName");
+  cLink.classList.add("active");
+  fLink.classList.remove("active");
+  tempElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 let searchForm = document.querySelector("#form1");
 searchForm.addEventListener("submit", clickSubmit);
+
+let fLink = document.querySelector("#fLink");
+fLink.addEventListener("click", showFtemperature);
+
+let cLink = document.querySelector("#cLink");
+cLink.addEventListener("click", showCtemperature);
 
 searchCity("Singapore");
