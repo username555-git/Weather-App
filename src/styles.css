@@ -1,5 +1,6 @@
 body {
   font-family: gabriola;
+  background-color: #c4faf8;
 }
 
 h1 {
@@ -31,7 +32,8 @@ h6 {
 }
 
 #weatherAppB {
-  border: 3px solid gray;
+  border: 3px solid;
+  border-color: #fffeff #d7fffe #d7fffe #fffeff;
   border-radius: 20px;
   padding: 30px;
   margin: 20px auto;
