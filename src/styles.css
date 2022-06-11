@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #0084ff;
+  color: #64b3f4;
 }
 
 h2 {
@@ -11,23 +11,23 @@ h2 {
 }
 
 h3 {
-  color: #0084ff;
+  color: #64b3f4;
 }
 
 h4 {
   text-transform: capitalize;
-  color: rgb(0, 123, 139);
+  color: #64b3f4;
   font-size: 16px;
 }
 
 h5 {
   text-transform: capitalize;
-  color: rgb(0, 123, 139);
+  color: #64b3f4;
   font-size: 16px;
 }
 
 h6 {
-  color: #0084ff;
+  color: rgb(15, 218, 133);
 }
 
 #weatherAppB {
@@ -36,6 +36,7 @@ h6 {
   padding: 30px;
   margin: 20px auto;
   max-width: 600px;
+  background: linear-gradient(to bottom right, #fffeff 0%, #d7fffe 100%);
 }
 
 .card-body .active {
@@ -50,15 +51,17 @@ h6 {
 
 .searchBtn {
   background-color: white;
+  border-radius: 8px;
+  border: 2px solid #64b3f4;
 }
 
 .container1 {
-  color: rgb(15, 218, 133);
+  color: rgb(0, 162, 255);
   text-align: center;
 }
 
 .container2 {
-  color: rgb(0, 162, 255);
+  color: rgb(15, 218, 133);
   text-align: center;
 }
 
@@ -67,6 +70,7 @@ form {
 }
 
 input[type="text"] {
+  border-radius: 8px;
   border: 2px solid rgb(15, 218, 133);
 }
 
@@ -77,5 +81,5 @@ input[type="text"] {
 input,
 select,
 textarea {
-  color: #0084ff;
+  color: #64b3f4;
 }
