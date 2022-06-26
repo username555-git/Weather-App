@@ -57,14 +57,24 @@ h6 {
   border: 2px solid #64b3f4;
 }
 
-.container1 {
-  color: rgb(0, 162, 255);
+.weather-forecast {
+  margin-top: 20px;
   text-align: center;
+  color: #000;
 }
 
-.container2 {
+.weather-forecast-date {
+  font-size: 16px;
   color: rgb(15, 218, 133);
-  text-align: center;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
 form {
