@@ -118,3 +118,4 @@ let cLink = document.querySelector("#cLink");
 cLink.addEventListener("click", showCtemperature);
 
 searchCity("Singapore");
+displayForecast();
